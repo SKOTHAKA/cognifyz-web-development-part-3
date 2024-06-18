@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#262626;
+    font-family:sans-serif;
+}
+nav{
+    background-color:purple;
+    padding:50px;
+}
+.navbar h1{
+    margin:0;
+    color:#fff;
+    text-align:center;
+     font-size:36;
+}
+.container{
+    width:1280px;
+    margin:30px auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+.container .box
+{
+    position:relative;
+    width:300px;;
+    height:300px;
+    margin:10px;
+    box-sizing:border-box;
+    display:inline-block;
+    overflow:hidden;
+}
+.box a{
+    text-decoration:none;
+    color:inherit;
+}
+.imgBox{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+.imgBox img{
+    height:100%;
+    width:100%;
+    overfit-fit:cover;
+    transition:transform 2s;
+}
+.box:hover .imgBox img{
+    transform:scale(1.2);
+}
+
+.details {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box:hover .details {
+  transform: scaleY(1);
+}
+
+.box .details .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+.details h2, .details p {
+  margin: 0;
+  padding: 25px 0;
+  text-align: center; /* Ensure each element's text is centered */
+}
+
+.details h2 {
+  font-size: 20px;
+  color: #ff0;
+}
